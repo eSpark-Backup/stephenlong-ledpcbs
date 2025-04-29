@@ -5,7 +5,7 @@
 Refer to 2x2 design pushed in docs folder and carry out below requirements (the 2x2 design probably references more to the Full Circuit LED Proto PCBA)
 ### Direct Drive LED Proto PCBA
 - Design a small prototype board containing two Emitter clusters.
-- Each cluster will consist of 6 individually wired LEDs (R, G, B, A, C, L) in a 2x3 grid configuration, spaced 10mm center-to-center
+- Each cluster will consist of 6 individually wired LEDs (R, G, B, A, C, L) in a 2x3 grid configuration, spaced 10mm center-to-center.  
 ![image](https://github.com/user-attachments/assets/16555748-902f-4b3b-b6ae-24e720ad79b4)
 
 - The six 5050 LEDs per cluster are: Red, Green, Blue, Amber, Cyan and Lime.
@@ -15,7 +15,7 @@ Refer to 2x2 design pushed in docs folder and carry out below requirements (the 
 
 ### Full Circuit LED Proto PCBA
 - Spaced 10mm center to center.
-- Arranged in a 2 wide, 3 high grid.
+- Arranged in a 2 wide, 3 high grid.  
 ![image](https://github.com/user-attachments/assets/ed9583c2-736e-4447-8317-5230c0193d39)
 
 - UCS 7604 constant-current driver IC
