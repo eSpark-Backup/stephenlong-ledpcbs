@@ -3,22 +3,16 @@
 
 ## Project Requirements
 Refer to 2x2 design pushed in docs folder and carry out below requirements (the 2x2 design probably references more to the Full Circuit LED Proto PCBA)
-### Direct Drive LED Proto PCBA
-- Design a small prototype board containing two Emitter clusters.
-- Each cluster will consist of 6 individually wired LEDs (R, G, B, A, C, L) in a 2x3 grid configuration, spaced 10mm center-to-center.  
-![image](https://github.com/user-attachments/assets/16555748-902f-4b3b-b6ae-24e720ad79b4)
-
-- The six 5050 LEDs per cluster are: Red, Green, Blue, Amber, Cyan and Lime.
-- Each LED will be routed to individual solder pads to support direct drive testing with external equipment.
-- Minimal circuitry; routing should prioritize accessibility for wired test setups.
-- 2 x mounting holes for M3 screw clearance
 
 ### Full Circuit LED Proto PCBA
 - Spaced 10mm center to center.
 - Arranged in a 2 wide, 3 high grid.  
 ![image](https://github.com/user-attachments/assets/ed9583c2-736e-4447-8317-5230c0193d39)
-
 - UCS 7604 constant-current driver IC
 - Required resistors, capacitors, and other supporting circuitry.
 - Voltage VDD, GND, and data input/output lines will terminate in accessible solder pads for easy interfacing.
-- 2 x mounting holes for M3 screw clearance 
+- The board should allow user to have both direct drive and full circuit capabilities by the following approach:
+    - run each positive and negative pad to a row of jumpers, each LED will have 3 pins on this jumper header assigned to it. The center pin will be connected to the trace for the LED pad. The left pin will be connected to the full driving circuit with IC. The right pin will go directly to a solder pad. This sequence will happen for each led (x12), then:
+        - **For Direct Drive:** User would put all the jumpers over to the center and right pin, then solder wires to the solder pads.
+        - **For Full Circuit:** User would put all of the jumpers on the left and center pin for each LED.
+- 4 x mounting holes for M3 screw clearance.
